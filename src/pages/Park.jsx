@@ -7,7 +7,6 @@ function Park() {
     name: "",
     numberPlate: 0,
     checkoutDate: "",
-    checkInDate: new Date(),
   });
 
   const [carParked, setCarParked] = useState([]);
@@ -25,7 +24,7 @@ function Park() {
     e.preventDefault();
     const data = {
       ...inputData,
-
+      checkInDate: new Date(),
       id: carParked.length + 1,
     };
     setCarParked([...carParked, data]);

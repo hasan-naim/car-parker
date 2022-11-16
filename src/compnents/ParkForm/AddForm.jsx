@@ -41,7 +41,6 @@ function AddForm({ inputData, setInputData, handleFormSubmit }) {
           <input
             required
             type="date"
-            min={`${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDate()}`}
             placeholder="Number Plate"
             className="input input-bordered w-full bg-white"
             value={inputData.checkoutDate}
